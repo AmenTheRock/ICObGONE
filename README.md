@@ -43,9 +43,18 @@ Right-click a PNG/JPG → Send To... → "Set Image as Icon" → pick a shortcut
 - Also, Convenience.  
 - You *can* convert PNG to .ico manually.
 - You *can* dig through Properties.
-- You *can* cry quietly in the corner.
+- You *could* cry quietly in the corner.
 
 **Or you can just... click.**
+
+---
+
+### 😡 I want it gone!
+1. Run the following in the folder of ICObGONE 
+  ```bash
+   ICObGONE.exe --unregister
+2. Delete the executeable
+3. Gone.
 
 ---
 
