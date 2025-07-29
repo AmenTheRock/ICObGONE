@@ -7,7 +7,7 @@
 > ...Set your icons free — no manual .ico conversion,no waiting, no crying.
 
 ![Built with Rust](https://img.shields.io/badge/Built_with-Rust-orange?logo=rust)  
-![Windows Ready](https://img.shields.io/badge/Windows-11+-0078D6?logo=windows)
+![Windows Ready](https://img.shields.io/badge/Windows-10+-0078D6?logo=windows)
 
 A little Rust tool that hooks into your Windows context menu and lets you do what Microsoft *should’ve* done:  
 Right-click a PNG/JPG → Send To... → "Set Image as Icon" → pick a shortcut → Boom. Instant custom icon.
@@ -21,6 +21,22 @@ Right-click a PNG/JPG → Send To... → "Set Image as Icon" → pick a shortcut
 
 ---
 
+### 🎴 How? 
+1. Download the executable.  
+2. Place it anywhere (e.g., `C:\Tools\ICObGONE`).  
+3. Open CMD in that folder and run:  
+   ```bash
+   ICObGONE.exe --register
+4. Enjoy! (Check your Send To Menu!)
+
+---
+
+### 📦 Where?
+ Get yours from "https://github.com/AmenTheRock/ICObGONE/releases" Today!
+- Recommended for Windows 10 and up,probably works on earlier versions (untested)
+- Recommended for x64 Users (x32 untested)
+ 
+---
 ### 🤨 Why?
 
 - Mainly, **because Windows won’t.**  
