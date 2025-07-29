@@ -18,6 +18,9 @@ Right-click a PNG/JPG → Send To... → "Set Image as Icon" → pick a shortcut
 <p align="center">
   <img src="https://github.com/AmenTheRock/ICObGONE/blob/main/demo.gif" alt="Demo GIF">
 </p>
+<p align="center">
+  <img src="https://github.com/AmenTheRock/ICObGONE/blob/main/demo2.gif" alt="Demo 2 GIF">
+</p>
 
 ---
 
@@ -27,7 +30,7 @@ Right-click a PNG/JPG → Send To... → "Set Image as Icon" → pick a shortcut
 3. Open CMD in that folder and run:  
    ```bash
    ICObGONE.exe --register
-4. Enjoy! (Check your Send To Menu!)
+4. Enjoy! (Check your "Send To" Menu!)
 
 ---
 
@@ -54,8 +57,16 @@ Right-click a PNG/JPG → Send To... → "Set Image as Icon" → pick a shortcut
 1. Run the following in the folder of ICObGONE 
    ```bash
    ICObGONE.exe --unregister
-2. Delete the executeable
+2. Delete the executable
 3. Gone.
+
+---
+
+### 📩 Update..?
+
+1. Delete your ICObGONE executable
+2. Download the new ICObGONE version
+3. Place ICObGONE in the same folder you placed it in when installing
 
 ---
 
