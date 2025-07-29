@@ -1,0 +1,47 @@
+
+name: Build and Release
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'src/**'
+      - 'Cargo.toml'
+      - 'Cargo.lock'
+      - 'build.rs'
+      - '.github/workflows/build.yml'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build
+      run: cargo build --verbose --release
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.run_number }}
+        release_name: Release ${{ github.run_number }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: .\target\release\ICObGONE.exe
+        asset_name: ICObGONE.exe
+        asset_content_type: application/vnd.microsoft.portable-executable
+
