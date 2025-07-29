@@ -50,8 +50,9 @@ Right-click a PNG/JPG → Send To... → "Set Image as Icon" → pick a shortcut
 ---
 
 ### 😡 I want it gone!
+
 1. Run the following in the folder of ICObGONE 
-  ```bash
+   ```bash
    ICObGONE.exe --unregister
 2. Delete the executeable
 3. Gone.
