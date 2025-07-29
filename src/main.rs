@@ -1,5 +1,5 @@
 mod dialog;
-//pub mod exe; //TODO: Exe Functionality is Heavily Expermiental,and is Broken at the moment.
+//pub mod exe; //TODO: Exe functionality is Heavily Expermiental,and is Broken at the moment.
 mod icon;
 mod shortcut;
 mod utils;
